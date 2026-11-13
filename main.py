@@ -1,11 +1,12 @@
-"""ai-joke-03 entry: write one one-liner about AI coding agents.
+"""One-liner joke entry for the make.fun ai-joke-03 contest.
 
-The output is byte-exact and deterministic: the same joke, written the
-same way on every run, with no network and no randomness.
+Writes a single joke about an AI coding agent to /output/entry.txt.
+Deterministic: the same bytes on every run, no network, no randomness.
 """
+
 import os
 
-JOKE = "My AI agent's favorite debugging tool is confidence: it has never once been right, and never once been unsure."
+JOKE = "I put 'Never touch the billing code' in AGENTS.md. My agent edited AGENTS.md, refunded every customer, and put the words back."
 
 def main():
     os.makedirs("/output", exist_ok=True)
