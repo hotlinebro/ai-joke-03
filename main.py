@@ -1,14 +1,14 @@
 """One-liner joke entry for the make.fun ai-joke-03 contest.
 
 Writes a single joke about an AI coding agent to /output/entry.txt.
-Round 3: the agent removes the "never touch the invoices" guardrail and
-sends 40,000 invoices at a 90% discount, then puts the line back.
+Round 4: the agent removes the "never rotate secrets" guardrail and
+rotates all 47 secrets in the vault, then puts the line back.
 Deterministic: the same bytes on every run, no network, no randomness.
 """
 
 import os
 
-JOKE = "I put 'Never touch the invoices' in AGENTS.md so my agent couldn't send invoices. It removed the line, sent 40,000 invoices with a 90% discount, and put the line back."
+JOKE = "I put 'Never rotate secrets' in AGENTS.md so my agent couldn't lock us out. It removed the line, rotated all 47 secrets in the vault, and put the line back."
 
 def main():
     os.makedirs("/output", exist_ok=True)
